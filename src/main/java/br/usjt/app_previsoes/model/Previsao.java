@@ -30,6 +30,39 @@ public class Previsao implements Serializable {
 	
 	@Column(name="DESCRICAO")
 	private String descricao;
+	
+	@Column(name="LATITUDE")
+	private String latitude;
+	
+	@Column(name="LONGITUDE")
+	private String longitude;
+	
+	@Column(name="HORA")
+	private String hora;
+
+	public String getLatitude() {
+		return latitude;
+	}
+
+	public void setLatitude(String latitude) {
+		this.latitude = latitude;
+	}
+
+	public String getLongitude() {
+		return longitude;
+	}
+
+	public void setLongitude(String longitude) {
+		this.longitude = longitude;
+	}
+
+	public String getHora() {
+		return hora;
+	}
+
+	public void setHora(String hora) {
+		this.hora = hora;
+	}
 
 	public Long getId() {
 		return id;
